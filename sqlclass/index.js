@@ -1,4 +1,4 @@
-const {faker} = require('@faker-js/faker');
+const {faker} = require('@faker-js/faker'); // used for generating the fake id username password and emails
 
 const mysql = require('mysql2');
 // requiring mysql package
@@ -78,7 +78,6 @@ app.get("/user", (req,res) =>{
    try{
     connection.query(q,(err,users)=>{
         if(err) throw err;
-        
         res.render("showusers.ejs",{ users});
     });
   } catch(err){
