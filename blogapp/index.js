@@ -17,7 +17,7 @@ app.use("/api/v1",blog);
 const connectWithDb = require("./config/database"); // importing the db
 connectWithDb();
 
-//startting the server
+//starting the server
 app.listen(PORT,()=>{
     console.log("app is running successfully ");
     });
